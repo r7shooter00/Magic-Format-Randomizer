@@ -9,9 +9,13 @@ public class Randomizer
 		ArrayList<Rule> finalRules = new ArrayList<Rule>();			//the final list of rules to print
 		Scanner input = new Scanner(System.in);
 		double funkValue = 0;
+		SetList sets = new SetList();
 		int numberOfSets = 0;
 		int infinity = 1000000;
-		 
+		String deck_building = "";
+		String gameplay = "";
+		
+		//User input loop
 		while (true)
 		{
 			System.out.print("Input a number between 5 and 674: ");
@@ -21,11 +25,25 @@ public class Randomizer
 				System.out.println("Not that high you dumb dumb.");
 				continue;
 			}
-			System.out.println("How many sets to include (there are 119 sets): ");
+			System.out.print("How many sets to include (there are 118 sets): ");
 			numberOfSets = input.nextInt();
-			if(numberOfSets > 119 || numberOfSets < 1)
+			if(numberOfSets > 118 || numberOfSets < 1)
 			{
 				System.out.println("Not possible. Try again.");
+				continue;
+			}
+			System.out.print("Include deckbuilding rules? (yes/no): ");
+			deck_building = input.next();
+			if (!deck_building.equals("yes") && !deck_building.equals("no"))
+			{
+				System.out.println("It's a yes or no question get it right.");
+				continue;
+			}
+			System.out.print("Include gameplay rules? (yes/no): ");
+			gameplay = input.next();
+			if (!gameplay.equals("yes") && !gameplay.equals("no"))
+			{
+				System.out.println("It's a yes or no question get it right.");
 				continue;
 			}
 			break;
@@ -68,17 +86,45 @@ public class Randomizer
 				funkSum = infinity;
 		}
 		
+		if (deck_building.equals("no") && gameplay.equals("no"))
+		{
+			funkSum = 0;
+			finalRules.clear();
+		}
+		
+		//sort through the final ruleset 
+		for (int i = 0; i < finalRules.size(); i++)
+		{
+			if (gameplay.equals("yes") && deck_building.equals("no"))
+			{
+				if(!finalRules.get(i).getCategory().equals("Gameplay"))
+				{
+					funkSum -= finalRules.get(i).getFunkScore();
+					finalRules.remove(i);
+				}
+			}
+			if (deck_building.equals("yes") && gameplay.equals("no"))
+			{
+				if(!finalRules.get(i).getCategory().equals("Deckbuilding"))
+				{
+					funkSum -= finalRules.get(i).getFunkScore();
+					finalRules.remove(i);
+				}
+			}
+		}
+		
 		//print final list
 		for(Rule r: finalRules)
 			System.out.println(r.getRule());
 		
 		System.out.println();
 		
-		for (int i = 0; i < numberOfSets; i++)
-			System.out.println(Math.round(119 * Math.random()));
-		
 		//no appropriate combination of rules
 		if(finalRules.isEmpty())
 			System.out.println("You are playing regular ass Magic.");
+		
+		//print randomly selected sets
+		for (int i = 0; i < numberOfSets; i++)
+			System.out.println(sets.getList().get((int)Math.round(sets.getNumberOfSets() * Math.random())));
 	}
 }
