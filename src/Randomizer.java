@@ -66,9 +66,31 @@ public class Randomizer
 				//if rule passes selection, add it to list
 				if (randomRule != null)
 				{
-					funkSum += randomRule.getFunkScore();
-					finalRules.add(randomRule);
-					list.getList().remove(randomRule);
+					
+					if (gameplay.equals("yes") && deck_building.equals("no"))
+					{
+						if(randomRule.getCategory().equals("Gameplay"))
+						{
+							funkSum += randomRule.getFunkScore();
+							finalRules.add(randomRule);
+							list.getList().remove(randomRule);
+						}
+					}
+					else if (deck_building.equals("yes") && gameplay.equals("no"))
+					{
+						if(randomRule.getCategory().equals("Deckbuilding"))
+						{
+							funkSum += randomRule.getFunkScore();
+							finalRules.add(randomRule);
+							list.getList().remove(randomRule);
+						}
+					}
+					else
+					{
+						funkSum += randomRule.getFunkScore();
+						finalRules.add(randomRule);
+						list.getList().remove(randomRule);
+					}
 					
 					//remove all other rules from the added rule's subcategory
 					for (int i = 0; i < list.getNumberOfRules(); i++)
@@ -86,31 +108,11 @@ public class Randomizer
 				funkSum = infinity;
 		}
 		
+		//for whatever reason the user inputs no for both
 		if (deck_building.equals("no") && gameplay.equals("no"))
 		{
 			funkSum = 0;
 			finalRules.clear();
-		}
-		
-		//sort through the final ruleset 
-		for (int i = 0; i < finalRules.size(); i++)
-		{
-			if (gameplay.equals("yes") && deck_building.equals("no"))
-			{
-				if(!finalRules.get(i).getCategory().equals("Gameplay"))
-				{
-					funkSum -= finalRules.get(i).getFunkScore();
-					finalRules.remove(i);
-				}
-			}
-			if (deck_building.equals("yes") && gameplay.equals("no"))
-			{
-				if(!finalRules.get(i).getCategory().equals("Deckbuilding"))
-				{
-					funkSum -= finalRules.get(i).getFunkScore();
-					finalRules.remove(i);
-				}
-			}
 		}
 		
 		//print final list

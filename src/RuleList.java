@@ -15,7 +15,7 @@ public class RuleList
 	private String number_of_cards_in_deck = "Number of cards in deck";
 	private String card_name = "Card Name";
 	private String rarity = "Rarity";
-	private String card_pool = "Card Pool";
+	//private String card_pool = "Card Pool";
 	private String card_type = "Card Type";
 	private String cmc = "Converted Mana Cost";
 	private String color = "Color";
@@ -68,12 +68,14 @@ public class RuleList
 		rules.add(mythic_uncommon);
 		Rule rare_mythic = new Rule("Only rares and mythics.", 60, deck_building, rarity);
 		rules.add(rare_mythic);
+		/*
 		Rule pioneer = new Rule("Pioneer-legal cards only.", 5, deck_building, card_pool);
 		rules.add(pioneer);
 		Rule modern = new Rule("Modern-legal cards only.", 5, deck_building, card_pool);
 		rules.add(modern);
 		Rule vintage = new Rule("Vintage-legal cards only (including restricted cards).", 25, deck_building, card_pool);
 		rules.add(vintage);
+		*/
 		Rule no_creatures = new Rule("No Creatures.", 30, deck_building, card_type);
 		rules.add(no_creatures);
 		Rule max_ten_creatures = new Rule("Maximum of 10 creatures.", 20, deck_building, card_type);
