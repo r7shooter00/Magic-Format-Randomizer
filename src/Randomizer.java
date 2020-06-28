@@ -10,7 +10,7 @@ public class Randomizer
 		Scanner input = new Scanner(System.in);
 		double funkValue = 0;
 		int infinity = 1000000;
-		
+		 
 		while (true)
 		{
 			System.out.print("Input a number between 5 and 674: ");
