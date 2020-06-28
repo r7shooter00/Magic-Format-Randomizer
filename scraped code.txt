@@ -1,0 +1,25 @@
+	//categories
+	private boolean deck_building = false;
+	private boolean gameplay = false;
+	
+	//deckbuilding subcategories
+	private boolean number_of_cards_in_deck = false;
+	private boolean card_name = false;
+	private boolean rarity = false;
+	private boolean card_pool = false;
+	private boolean card_type = false;
+	private boolean cmc = false;
+	private boolean color = false;
+	private boolean misc = false;
+	
+	//gameplay subcategories
+	private boolean life_total = false;
+	private boolean deck_size = false;
+	private boolean hand_size = false;
+	private boolean card_draw = false;
+	private boolean lands = false;
+	private boolean creatures = false;
+	private boolean spell_cost = false;
+	private boolean spells = false;
+	private boolean turns = false;
+	private boolean other_rules = false;
