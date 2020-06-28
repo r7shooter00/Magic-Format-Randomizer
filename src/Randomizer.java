@@ -9,15 +9,23 @@ public class Randomizer
 		ArrayList<Rule> finalRules = new ArrayList<Rule>();			//the final list of rules to print
 		Scanner input = new Scanner(System.in);
 		double funkValue = 0;
+		int numberOfSets = 0;
 		int infinity = 1000000;
 		 
 		while (true)
 		{
 			System.out.print("Input a number between 5 and 674: ");
 			funkValue = Math.round(input.nextDouble() / 10) * 10;			//divided by 10 rounded, then multiplied by 10 to round it to a number divisible by 10. This value determines how random the ruleset will be.
-			if(funkValue > 670)
+			if(funkValue > 670 || funkValue < 5)
 			{
 				System.out.println("Not that high you dumb dumb.");
+				continue;
+			}
+			System.out.println("How many sets to include (there are 119 sets): ");
+			numberOfSets = input.nextInt();
+			if(numberOfSets > 119 || numberOfSets < 1)
+			{
+				System.out.println("Not possible. Try again.");
 				continue;
 			}
 			break;
@@ -63,6 +71,11 @@ public class Randomizer
 		//print final list
 		for(Rule r: finalRules)
 			System.out.println(r.getRule());
+		
+		System.out.println();
+		
+		for (int i = 0; i < numberOfSets; i++)
+			System.out.println(Math.round(119 * Math.random()));
 		
 		//no appropriate combination of rules
 		if(finalRules.isEmpty())

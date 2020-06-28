@@ -1,0 +1,119 @@
+1 Core Set 2021	M21	M21_C	
+2 Ikoria: Lair of Behemoths	IKO	IKO_C
+3 Commander 2020	C20	C20_C
+4 Theros Beyond Death	THB	THB_C
+5 Throne of Eldraine	ELD	ELD_C
+6 Commander 2019	C19	C19_C
+7 Core Set 2020	M20	M20_C
+8 Modern Horizons	MH1	MH1_C
+9 War of the Spark	WAR	WAR_C
+10 Ravnica Allegiance	RNA	RNA_C
+11 Guilds of Ravnica	GRN	GRN_C
+12 Commander 2018	C18	C18_C
+13 Core Set 2019	M19	M19_C
+14 Battlebond	BBD	BBD_C
+15 Dominaria	DOM	DOM_C
+16 Rivals of Ixalan	RIX	RIX_C
+17 Ixalan	XLN	XLN_C	
+18 Commander 2017	C17	C17_C
+19 Hour of Devastation	HOU	HOU_C
+20 Amonkhet	AKH	AKH_C
+21 Aether Revolt	AER	AER_C
+22 Commander 2016	C16	C16_C
+23 Conspiracy: Take The Crown	CN2	CN2_C
+24 Kaladesh	KLD	KLD_C
+25 Eldritch Moon	EMN	EMN_C
+26 Shadows Over Innistrad	SOI	SOI_C
+27 Oath of the Gatewatch	OGW	OGW_C
+28 Commander 2015	C15	C15_C
+29 Battle for Zendikar	BFZ	BFZ_C
+30 Magic Origins	ORI	ORI_C
+31 Dragons of Tarkir	DTK	DTK_C
+32 Fate Reforged	FRF	FRF_C
+33 Commander 2014	C14	C14_C
+34 Khans of Tarkir	KTK	KTK_C
+35 Magic 2015 Core Set	M15	M15_C
+36 Conspiracy	CNS	CNS_C
+37 Journey into Nyx	JOU	JOU_C
+38 Born of the Gods	BNG	BNG_C
+39 Commander 2013 Edition	C13	C13_C
+40 Theros	THS	THS_C
+41 Magic 2014 Core Set	M14	M14_C
+42 Dragon's Maze	DGM	DGM_C
+43 Gatecrash	GTC	GTC_C
+44 Return to Ravnica	RTR	RTR_C
+45 Magic 2013	M13	M13_C
+46 Avacyn Restored	AVR	AVR_C
+47 Dark Ascension	DKA	DKA_C
+48 Innistrad	ISD	ISD_C
+49 Magic 2012	M12	M12_C
+50 New Phyrexia	NPH	NPH_C
+51 Mirrodin Besieged	MBS	MBS_C
+52 Scars of Mirrodin	SOM	SOM_C
+53 Magic 2011	M11	M11_C
+54 Rise of the Eldrazi	ROE	ROE_C
+55 Worldwake	WWK	WWK_C
+56 Zendikar	ZEN	ZEN_C
+57 Magic 2010	M10	M10_C
+58 Alara Reborn	ARB	ARB_C
+59 Conflux	CON	CON_C
+60 Shards of Alara	ALA	ALA_C
+61 Eventide	EVE	EVE_C
+62 Shadowmoor	SHM	SHM_C
+63 Morningtide	MOR	MOR_C
+64 Lorwyn	LRW	LRW_C
+65 Tenth Edition	10ED	10E_C
+66 Future Sight	FUT	FUT_C
+67 Planar Chaos	PLC	PLC_C
+68 Time Spiral	TSP	TSP_C
+69 Coldsnap	CSP	CSP_C
+70 Dissension	DIS	DIS_C
+71 Guildpact	GPT	GPT_C
+72 Ravnica: City of Guilds	RAV	RAV_C
+73 Ninth Edition	9ED	9ED_C
+74 Saviors of Kamigawa	SOK	SOK_C
+75 Betrayers of Kamigawa	BOK	BOK_C
+76 Champions of Kamigawa	CHK	CHK_C
+77 Unhinged	UNH	UNH_C
+78 Fifth Dawn	5DN	5DN_C
+79 Darksteel	DST	DST_C
+80 Mirrodin	MRD	MRD_C
+81 Eighth Edition	8ED	8ED_C
+82 Scourge	SCG	SCG_C
+83 Legions	LGN	LGN_C
+84 Onslaught	ONS	ONS_C
+85 Judgment	JUD	JUD_C
+86 Torment	TOR	TOR_C
+87 Odyssey	ODY	OD_C
+88 Seventh Edition	7ED	7E_C
+89 Apocalypse	APC	AP_C
+90 Planeshift	PLS	PS_C
+91 Invasion	INV	IN_C
+92 Prophecy	PCY	PR_C
+93 Nemesis	NEM	NE_C
+94 Mercadian Masques	MMQ	MM_C
+95 Classic Sixth Edition	6ED	6E_C
+96 Urza's Destiny	UDS	CG_C
+97 Urza's Legacy	ULG	GU_C
+98 Urza's Saga	USG	UZ_C	
+99 Exodus	EXO	EX_C
+100 Stronghold	STH	ST_C
+101 Tempest	TMP	TE_C
+102 Fifth Edition	5ED	5E_C
+103 Weatherlight	WTH	WL_C
+104 Visions	VIS	VI_C
+105 Mirage	MIR	MI_C
+106 Alliances	ALL	AL_C
+107 Homelands	HML	HM_C
+108 Ice Age	ICE	IA_C
+109 Fourth Edition	4ED	4E_C		
+110 Chronicles	CHR	CH_C
+111 Revised Edition	3ED	3E_C
+112 Fallen Empires	FEM	FE_C
+113 The Dark	DRK	DK_C
+114 Legends	LEG	LE_C
+115 Antiquities	ATQ	AQ_C
+116 Arabian Nights	ARN	AN_C
+117 Unlimited Edition	2ED	2U_C
+118 Limited Edition Beta	LEB	2E_C
+119 Limited Edition Alpha	LEA	1E_C
