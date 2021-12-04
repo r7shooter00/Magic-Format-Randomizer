@@ -5,6 +5,13 @@ public class SetList
 	
 	public SetList()
 	{
+		sets.add("Innistrad: Crimson Vow");
+		sets.add("Innistrad: Midnight Hunt");
+		sets.add("Adventures in the Forgotten Realms");
+		sets.add("Modern Horizon 2");
+		sets.add("Strixhaven");
+		sets.add("Kaldheim");
+		sets.add("Zendikar Rising");
 		sets.add("Core Set 2021");
 		sets.add("Ikoria: Lair of Behemoths");
 		sets.add("Commander 2020");
