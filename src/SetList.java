@@ -5,6 +5,11 @@ public class SetList
 	
 	public SetList()
 	{
+		sets.add("Phyrexia: All Will Be One");
+		sets.add("The Brothers' War");
+		sets.add("Dominaria: United");
+		sets.add("Streets of New Capenna");
+		sets.add("Kamigawa: Neon Dynasty");
 		sets.add("Innistrad: Crimson Vow");
 		sets.add("Innistrad: Midnight Hunt");
 		sets.add("Adventures in the Forgotten Realms");
